@@ -1,0 +1,156 @@
+/* ====== General Layout ====== */
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  background-color: #202124;
+  color: white;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+/* ====== Centered Search ====== */
+.center-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.title {
+  font-size: 64px;
+  color: #8ab4f8;
+  margin-bottom: 40px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #303134;
+  border-radius: 24px;
+  padding: 10px 20px;
+  width: 500px;
+}
+
+.search-box input {
+  flex: 1;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+.search-icon,
+.spinner {
+  color: #9aa0a6;
+}
+
+/* Fade animation on submit */
+.fade-out {
+  opacity: 0;
+}
+
+/* ====== Split View Layout ====== */
+.split-view {
+  display: flex;
+  height: 100%;
+  background-color: #202124;
+  color: white;
+}
+
+.split-column {
+  flex: 1;
+  padding: 40px;
+  border-left: 1px solid #333;
+  overflow-y: auto;
+}
+
+.split-column:first-child {
+  border-left: none;
+}
+
+/* ====== ChatGPT Styling ====== */
+.chatgpt-content {
+  white-space: pre-line;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ====== Brave (Google-style) Result Styling ====== */
+.brave-results .result-item {
+  margin-bottom: 28px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #333;
+}
+
+.source-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #9aa0a6;
+  margin-bottom: 5px;
+}
+
+.favicon {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.source-name {
+  font-weight: 500;
+}
+
+.result-title {
+  display: block;
+  font-size: 18px;
+  color: #8ab4f8;
+  font-weight: 400;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+
+.result-title:hover {
+  text-decoration: underline;
+}
+
+.source-url {
+  font-size: 13px;
+  color: #9aa0a6;
+  margin-bottom: 6px;
+}
+
+.result-snippet {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.5;
+}
+
+.chat-context {
+  margin-top: 20px;
+  padding: 10px 15px;
+  background-color: #2a2b2f;
+  border-left: 3px solid #8ab4f8;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.chat-context label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: #8ab4f8;
+}
+
+.chat-context blockquote {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  color: #ccc;
+}
