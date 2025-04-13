@@ -16,7 +16,7 @@
 
 ## 📸 Demo
 
-<img src="screenshot.png" width="700" alt="Sidewise Search Screenshot" />
+<img src="./public/assets/screenshot.png" width="700" alt="Sidewise Search Screenshot" />
 
 ---
 
